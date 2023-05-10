@@ -28,7 +28,7 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', function ()    {
     cy.get('#firstName').type('Rafael Augusto')
     cy.get('#lastName').should('be.visible').type('Martins Fernandes')
     cy.get('#email').should('be.visible').type('rafaelmfernandes7@gmail.com')
-    cy.get('#open-text-area').should('be.visible').type('oieeee, wololo', {delay: 3})
+    cy.get('#open-text-area').should('be.visible').type('Preenchi e ainda coloquei o gatinho na tela', {delay: 3})
     cy.get('button[type="submit"]').click().should('be.visible', 'Mensagem enviada com sucesso')
 
 
